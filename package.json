@@ -1,8 +1,10 @@
 {
   "name": "gym_fitness",
   "version": "0.1.0",
+  "homepage": "https://Rafiq825.github.io/gym_fitness",
   "private": true,
   "dependencies": {
+    "-": "^0.0.1",
     "@emotion/react": "^11.9.0",
     "@emotion/styled": "^11.8.1",
     "@mui/icons-material": "^5.6.1",
@@ -12,10 +14,11 @@
     "react-horizontal-scrolling-menu": "^2.8.2",
     "react-loader-spinner": "^6.0.0-0",
     "react-router-dom": "^6.3.0",
-    "react-scripts": "5.0.1",
-    "web-vitals": "^3.5.0"
+    "react-scripts": "5.0.1"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -38,5 +41,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^6.1.1"
   }
 }
